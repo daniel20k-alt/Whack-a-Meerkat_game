@@ -26,6 +26,8 @@
 		EE4A6B65242201F90057B72D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE4A6B68242201F90057B72D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE4A6B6A242201F90057B72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4A6B702422060B0057B72D /* whack.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whack.caf; sourceTree = "<group>"; };
+		EE4A6B712422060B0057B72D /* whackBad.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = whackBad.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,8 @@
 				EE4A6B65242201F90057B72D /* Assets.xcassets */,
 				EE4A6B67242201F90057B72D /* LaunchScreen.storyboard */,
 				EE4A6B6A242201F90057B72D /* Info.plist */,
+				EE4A6B702422060B0057B72D /* whack.caf */,
+				EE4A6B712422060B0057B72D /* whackBad.caf */,
 			);
 			path = "Whack-a-Meerkat";
 			sourceTree = "<group>";
