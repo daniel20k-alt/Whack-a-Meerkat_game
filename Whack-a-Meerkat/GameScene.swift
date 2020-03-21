@@ -14,6 +14,7 @@ class GameScene: SKScene {
     var gameScore: SKLabelNode!
     
     var popupTime = 0.85
+    var gameRound = 0
     
     var score = 0 {
     didSet {
@@ -87,6 +88,20 @@ class GameScene: SKScene {
     }
     
     func createEnemy() {
+        gameRound += 1
+        if gameRound >= 40 {
+            for slot in slots {
+                slot.hide()
+            }
+            
+            let gameOver = SKSpriteNode(imageNamed: "gameOver")
+            gameOver.position = CGPoint(x: 512, y: 384)
+            gameOver.zPosition = 1
+            addChild(gameOver)
+            
+            return
+        }
+        
         popupTime *= 0.991
         
         slots.shuffle()
@@ -102,12 +117,6 @@ class GameScene: SKScene {
         let delay = Double.random(in: minDelay...maxDelay)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in self?.createEnemy() }
-        
-        
-        
-        
-    }
-    
-    
-    
+  
+    } 
 }
